@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppin 'san-serif';
+    font-size: small;
+}
+.full{
+   overflow: hidden;
+}
+.container{
+    
+     height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgb(34, 32, 32)), url(images/pexels-thgusstavo-santana-2014809.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.container nav{
+    width: 80vw;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav .logo img{
+   width: 150px;
+}
+
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    font-size: bold;
+    text-transform: capitalize;
+    padding: 0 15px;
+
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav .btn{
+    padding: 4px 10px;
+    font-weight: bold;
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    outline: none;
+}
+
+section{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding-left: 90px;
+
+}
+section h1{
+    font-size: 3.4em;
+    color: white;
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+section .pag{
+    color: white;
+    margin-top: 10px;
+}
+section .btn{
+    padding: 10px 40px;
+    font-weight: bold;
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+}
+
+/*------- about slide -------*/
+
+
+.about{
+    width: 100vw;
+    height: 90vh;
+    padding: 30px 50px;
+    overflow: ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(71, 65, 65);
+
+}
+.about .split{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    justify-content: space-around;
+     background-color: blue;
+    flex-wrap: nowrap;
+    padding: 5px 5px;
+    
+
+
+}
+.about .split .left{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    /*padding: 20px 20px;*/
+    background-color: brown;
+}
+.about .split .left .me{
+    position: absolute;
+    top: 110px;
+    left: 220px;
+    width: 150px;
+    border: 8px solid rgb(71, 65, 65);
+}
+.about .split .left .boss{
+    position: absolute;
+    top: 0;
+}
+.about .split .left img{
+    width: 250px;
+}
+.about .split .right{
+    width: 30%;
+    height: 100%;
+    padding: 20px 5px;
+    color: white;
+}
+
+.about .split .right h2{
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+.about .time{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 0px;
+    margin-top: 40px;
+}
+ 
+.about .right p{
+    margin-top: 20px;
+}
+
+
+/*-------- service ------*/
+
+
+.service{
+    width: 100vw;
+    height: 100vw;
+    background: white;
+    color: black;
+    position: relative;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+  
+}
+
+.service .style_slide{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  padding: 10px;
+    gap: 10px;
+
+}
+.service .text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+
+}
+.service h2{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.service .imgflow{
+    width: 100%;
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.service .style_slide img{
+    width: 120px;
+    max-width: 180px;
+    border-radius: 10px;
+    z-index: 100;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.service .style_slide img:hover{
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 10px;
+    box-shadow: 0 30px 7px rgb(71, 65, 65);
+}
+.full_image{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 150;
+    
+}
+.full_image img{
+    width: 300px;
+    height: 400px;
+    max-width: 300px;
+}
+.full_image span{
+    
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
