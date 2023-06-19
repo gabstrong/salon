@@ -68,6 +68,8 @@ section h1{
 section .pag{
     color: white;
     margin-top: 10px;
+    border-left: 3px solid blueviolet;
+    padding-left: 10px;
 }
 section .btn{
     padding: 10px 40px;
@@ -86,7 +88,6 @@ section .btn{
     width: 100vw;
     height: 90vh;
     padding: 30px 50px;
-    overflow: ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,7 +100,6 @@ section .btn{
     width: 100%;
     height: 80vh;
     justify-content: space-around;
-     background-color: blue;
     flex-wrap: nowrap;
     padding: 5px 5px;
     
@@ -111,8 +111,10 @@ section .btn{
     height: 100%;
     position: relative;
     /*padding: 20px 20px;*/
-    background-color: brown;
+    
+
 }
+
 .about .split .left .me{
     position: absolute;
     top: 110px;
@@ -138,6 +140,17 @@ section .btn{
     font-size: 2em;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: capitalize;
+    position: relative;
+}
+.about .split .right .right_head::before{
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: blueviolet;
 }
 .about .time{
     display: flex;
@@ -159,8 +172,8 @@ section .btn{
 
 .service{
     width: 100vw;
-    height: 100vw;
-    background: white;
+    height: 100%;
+    background: linear-gradient(to top right,blue,red,blue);
     color: black;
     position: relative;
     padding-top: 40px;
@@ -189,9 +202,13 @@ section .btn{
 }
 .service h2{
     font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
     text-transform: capitalize;
     margin-bottom: 10px;
+}
+.service p{
+    color: white;
 }
 .service .imgflow{
     width: 100%;
@@ -203,9 +220,9 @@ section .btn{
     
 }
 .service .style_slide img{
-    width: 120px;
+    width: 60px;
     max-width: 180px;
-    border-radius: 10px;
+    border-radius: 5px;
     z-index: 100;
     transition: 0.5s;
     cursor: pointer;
@@ -213,7 +230,7 @@ section .btn{
 .service .style_slide img:hover{
     transform: scale(0.8) rotate(-15deg);
     border-radius: 10px;
-    box-shadow: 0 30px 7px rgb(71, 65, 65);
+    box-shadow: 0 10px 7px rgb(113, 94, 148);
 }
 .full_image{
     width: 100%;
@@ -242,4 +259,92 @@ section .btn{
     cursor: pointer;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ----- service 2 ----*/
+
+.service2{
+width: 100vw;
+    height: 90vh;
+    padding: 10px 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.1),black),url(images/hair-salon-gd9b6fc798_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.head_text h2,h3{
+    font-size: 1.9em;
+    color: white;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.split1{
+display: flex;
+align-items: center;
+width: 100%;
+height: 80vh;
+justify-content: space-around;
+flex-wrap: nowrap;
+padding: 5px 5px;
+}
+
+.left1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 30px;
+}
+.left_inner h4{
+      color: blue;
+      font-size: 1.4em;
+      text-transform: capitalize;
+}
+.left_inner p{
+    color: white;
+}
+.right1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.right1 .imgbox{
+    width: 200px;
+    height: 300px;
+    background-image: url(images/hairdressing-gc483c9290_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    position: relative;
+}
+.service2 .right1 .btn_top{
+    position: absolute;
+    bottom: 20px;
+    right: -20px;
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+    font-size: smaller;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+}
+.service2 .right1 .btn_top:hover{
+    border: 1px solid orange;
+    color: orange;
+    background-color: transparent;
 }
